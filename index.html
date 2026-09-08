@@ -101,7 +101,29 @@
     <li>Coordinated logistics and planning for national-level tournament participation</li>
   </ul>
 
+  <h2>Contact Me</h2>
+  <form id="contactForm" class="col-md-6">
+    <div class="mb-3">
+      <label for="fullName" class="form-label">Full Name</label>
+      <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Message</label>
+      <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+    </div>
+    <button type="button" id="contactBtn" class="btn btn-primary">Contact me</button>
+  </form>
+
 </div>
+
+<script>
+  document.getElementById("contactBtn").addEventListener("click", function () {
+    var fullName = document.getElementById("fullName").value;
+    var message = document.getElementById("message").value;
+    console.log("Full Name: " + fullName);
+    console.log("Message: " + message);
+  });
+</script>
 
 </body>
 </html>
